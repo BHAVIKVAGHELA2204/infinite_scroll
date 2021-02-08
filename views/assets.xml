@@ -1,0 +1,9 @@
+<odoo>
+    <template id="custom_infinite_scroll_assets" inherit_id="website.assets_frontend">
+        <xpath expr="link" position="replace">
+            <script src="/hspl_infinite_scroll/static/src/js/infinite-scroll.pkgd.js"></script>
+<!--            <script src="/hspl_infinite_scroll/static/src/js/infinite-scroll-docs.min.js"></script>-->
+            <script src="/hspl_infinite_scroll/static/src/js/infinite_scroll.js"></script>
+        </xpath>
+    </template>
+</odoo>

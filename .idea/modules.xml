@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../.idea/hspl_training_14.iml" filepath="$PROJECT_DIR$/../.idea/hspl_training_14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../odoo/.idea/odoo.iml" filepath="$PROJECT_DIR$/../../odoo/.idea/odoo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hspl_infinite_scroll/.idea/theme_infinite_scrolling.iml" filepath="$PROJECT_DIR$/../hspl_infinite_scroll/.idea/theme_infinite_scrolling.iml" />
+    </modules>
+  </component>
+</project>

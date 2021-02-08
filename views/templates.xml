@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="add_id_infinite_scrolling" inherit_id="website_blog.posts_loop" name="add id infinite scrolling">
+            <!--<xpath expr="//div[@id='o_wblog_posts_loop']/div[2]/t[@t-as='blog_post']/div" position="attributes">
+                <attribute name="t-attf-class">pb-4 col-12 #{colWidth} infinite_scrolling</attribute>
+            </xpath>-->
+            <xpath expr="//div[@id='o_wblog_posts_loop']/div[2]/t[2]/div[1]/article" position="attributes">
+                <attribute name="id">article</attribute>
+            </xpath>
+            <xpath expr="//div[@id='o_wblog_posts_loop']/div[2]/t[2]" position="after">
+                <p class="pagination">
+                    <a class="pagination__next" href="/blog/page/2">Next page</a>
+                </p>
+                <!--<script src="/hspl_infinite_scroll/static/src/js/infinite-scroll-docs.min.js?3"></script>-->
+            </xpath>
+            <xpath expr="//div[@id='o_wblog_posts_loop']/div[2]/t[@t-as='blog_post']/div" position="attributes">
+                <attribute name="id">scroller_post</attribute>
+            </xpath>
+            <xpath expr="//div[@id='o_wblog_posts_loop']" position="inside">
+                <div class="page-load-status text-center">
+                    <p class="infinite-scroll-request">Loading...</p>
+                    <p class="infinite-scroll-last">End of content</p>
+                    <p class="infinite-scroll-error">No more pages to load</p>
+                </div>
+                <!--<div class="page-load-status">
+                    <div class="loader-ellips infinite-scroll-request">
+                    </div>
+                    <p class="infinite-scroll-last">End of content</p>
+                    <p class="infinite-scroll-error">No more pages to load</p>
+                </div>-->
+            </xpath>
+        </template>
+    </data>
+</odoo>
